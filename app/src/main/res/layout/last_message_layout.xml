@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="60dp"
+    android:id="@+id/messageContainer"
+    android:forceDarkAllowed="true"
+    android:background="@color/messagePageBg"
+    android:visibility="invisible"
+    android:clipToPadding="false">
+
+    <View
+        android:id="@+id/avatar"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerInside"
+        android:background="@drawable/sendee_avatar"
+        android:layout_width="34dp"
+        android:layout_height="34dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_alignTop="@+id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:textSize="20sp"
+        android:text="Game"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageBody"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:textSize="15sp"
+        android:maxLines="2"
+        android:text="I tried to send the message to the guy but I dont think he ended up getting thr "
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_marginLeft="15dp"
+        android:layout_alignTop="@+id/avatar"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:textSize="20sp"
+        android:text="12:10 PM"/>
+
+</RelativeLayout>
